@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+td,th {
+    border-left: 3px solid red;
+}
+th {
+    border-bottom: 3px solid red;
+}
