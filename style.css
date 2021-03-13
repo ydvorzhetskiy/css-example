@@ -1,11 +1,60 @@
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.table {
+    width: 300px;
+    display: block;
+    margin: 10px auto 50px auto;
+    padding: 20px;
+    border: 10px solid gray;
 }
-td,th {
-    border-left: 3px solid red;
+.row {
+    padding: 10px;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
 }
-th {
-    border-bottom: 3px solid red;
+
+.row:last-of-type {
+    border-bottom: 2px solid gray;
+}
+
+.row:nth-child(2n+1) {
+    background-color: lightgray;
+}
+
+
+li::marker {
+    content: '-> '
+}
+
+.logo {
+    display: inline-block;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    padding: 5px;
+    border: 1px solid darkred;
+
+}
+
+.logo::before {
+    content: '\2764';
+    font-style: normal;
+    color: darkred;
+}
+
+p:first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+.banner {
+    display: none;
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    top:25%;
+    width: 50vw;
+    height: 50vh;
+    font-size: 72px;
+    background-color: lightgray;
 }
